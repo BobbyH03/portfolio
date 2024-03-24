@@ -45,7 +45,7 @@ img = document.getElementById("img2");
 // Function to set image dimensions for 2nd image
 function enlargeImg2() {
     img2.style.width = "80%";
-    img2.style.height = "auto";
+    img2.style.height = "50%";
     img2.style.transition = "width 0.5s ease";
 }
 
