@@ -41,23 +41,9 @@ function enlargeImg1() {
     img1.style.transition = "width 0.5s ease";
 }
 
-img = document.getElementById("img2");
-// Function to set image dimensions for 2nd image
-function enlargeImg2() {
-    img2.style.width = "80%";
-    img2.style.height = "50%";
-    img2.style.transition = "width 0.5s ease";
-}
-
 // Function to reset image dimensions
 function resetImg1() {
-    img1.style.width = "10%";
+    img1.style.width = "30%";
     img1.style.height = "auto";
     img1.style.transition = "width 0.5s ease";
-}
-// Function to reset image dimensions
-function resetImg2() {
-    img2.style.width = "10%";
-    img2.style.height = "auto";
-    img2.style.transition = "width 0.5s ease";
 }
