@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="contact-page">
+  <!-- Contact Form -->
+  <form id="contact-form">
+    <h2>Contact Me</h2>
+    
+    <div class="form-field">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-field">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-field">
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+  
+    <button type="submit" id="send-button">Send Message</button>
+  
+    <!-- Success or error message will appear here -->
+    <div class="message success" id="success-message" style="display:none;">Your message was sent successfully!</div>
+    <div class="message error" id="error-message" style="display:none;">Something went wrong. Please try again later.</div>
+  </form>
+
+  <!-- JavaScript to handle form submission -->
+  <script>
+    (function() {
+      emailjs.init("27UsnuU6A0FeRly7y"); // Replace with your EmailJS user ID
+    })();
+
+    const form = document.getElementById("contact-form");
+    const sendButton = document.getElementById("send-button");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      // Disable button and show a loading message
+      sendButton.disabled = true;
+      sendButton.innerText = "Sending...";
+
+      // Send the form data to EmailJS
+      emailjs.sendForm('service_j98zu26', 'template_7r3vz6d', form)
+        .then(function(response) {
+          console.log('Success:', response);
+          alert('Message sent successfully!');
+          sendButton.disabled = false;
+          sendButton.innerText = "Send Message";
+        }, function(error) {
+          console.log('Failed:', error);
+          alert('Something went wrong. Please try again later.');
+          sendButton.disabled = false;
+          sendButton.innerText = "Send Message";
+        });
+    });
+  </script>
+</body>
+</html>
