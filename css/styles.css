@@ -79,6 +79,7 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Scoped Contact Form Styles */
 #contact-page {
   display: flex;
   justify-content: center; /* Horizontally center the content */
@@ -100,7 +101,11 @@
   display: flex;
   flex-direction: column; /* Arrange elements in a column */
   justify-content: center; /* Vertically center the form content */
-  margin-left: 390px;
+}
+@media (min-width: 768px) {
+  #contact-page #contact-form {
+    margin-left: 390px; /* Only apply this margin on larger screens */
+  }
 }
 
 /* Title */
@@ -183,6 +188,34 @@
 #contact-page #contact-form .form-field {
   margin-bottom: 15px;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  #contact-page {
+    padding: 20px; /* Add padding for small screens */
+  }
+
+  #contact-page #contact-form {
+    padding: 20px; /* Reduce padding on mobile for better fit */
+    max-width: 100%; /* Ensure the form takes up full width on small screens */
+  }
+
+  #contact-page #contact-form h2 {
+    font-size: 1.5rem; /* Slightly smaller title on mobile */
+  }
+
+  #contact-page #contact-form input,
+  #contact-page #contact-form textarea {
+    padding: 10px; /* Reduce padding for mobile */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+
+  #contact-page #contact-form button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 10px 18px; /* Adjust button size for mobile */
+  }
+}
+
 
 /* Vacation Planner Page Styles */
 #vacation-planner-page .resume-section {
