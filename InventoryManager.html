@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Manager - Project Showcase</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+
+<body id="vacation-planner-page">
+    <section class="resume-section" id="vacation-planner">
+        <div class="resume-section-content">
+            <a href="index.html#projects" style="display:inline-block; margin-bottom: 20px;">← Back to Portfolio</a>
+            <h2 class="mb-5">🛠️ Inventory Manager</h2>
+
+            <p>
+                Inventory Manager is a custom inventory management system built using Spring Boot and Java for the
+                backend, with HTML and CSS for the front end. It is designed for businesses that sell products composed
+                of individual parts, helping them track, manage, and maintain accurate inventory records.
+            </p>
+
+            <p> The application allows users to:</p>
+            <ul>
+                <li>Add, update, and delete products and parts</li>
+                <li>Enforce inventory constraints to prevent overstocking or shortages</li>
+                <li>Process purchases and automatically adjust inventory levels</li>
+            </ul>
+
+            <h3>Features</h3>
+            <ul>
+                <li><strong>Customizable Storefront:</strong> Designed for a fictional business, Performance PCs &
+                    Parts, the app displays the store name, available products, and associated parts on the main screen.
+                </li>
+
+                <li><strong>Product and Part Management:</strong> Users can create, edit, or delete inventory items.
+                    Each product consists of one or more parts, and the system maintains clear part-to-product
+                    relationships for tracking purposes.</li>
+
+                <li><strong>Purchase System:</strong> Every product features a "Buy Now" button that simulates a
+                    customer purchase. Stock counts are updated immediately. If a product is out of stock, an error
+                    message is displayed.</li>
+
+                <li><strong>Inventory Constraints:</strong> Each part includes a defined minimum and maximum threshold.
+                    The app enforces these values to prevent invalid inventory states.</li>
+
+                <li><strong>Sample Data:</strong> Five example products and five parts are preloaded into the system
+                    every time it starts. This ensures consistent testing conditions and allows quick demos.</li>
+
+                <li><strong>About Page:</strong> A simple "About" page explains the fictional business. Users can
+                    navigate between the main screen and the about page easily.</li>
+
+                <li><strong>Input Validation & Error Handling:</strong>
+                    <ul>
+                        <li>Prevents assigning more parts to a product than are in stock</li>
+                        <li>Blocks inventory edits that break min/max rules</li>
+                        <li>Displays real-time validation messages for incorrect entries</li>
+                    </ul>
+                </li>
+
+                <li><strong>Unit Testing:</strong> Two unit tests are included to validate proper enforcement of
+                    inventory constraints on part quantities.</li>
+            </ul>
+
+            <h3>Technology Stack</h3>
+            <ul>
+                <li><strong>Backend:</strong> Java, Spring Boot</li>
+                <li><strong>Frontend:</strong> HTML, CSS</li>
+                <li><strong>Database:</strong> Spring JPA (currently in-memory)</li>
+                <li><strong>Testing:</strong> JUnit</li>
+            </ul>
+
+            <h3>Future Enhancements</h3>
+            <ul>
+                <li>Implement persistent database storage to save inventory across sessions</li>
+                <li>Redesign frontend with a more modern interface</li>
+                <li>Add login authentication and role-based access controls for staff/admins</li>
+            </ul>
+            <h3>Live Demo & Code Repository</h3>
+            <p>
+                <a href="https://invmgr.dev/mainscreen" target="_blank">🌐 View Live Demo</a><br>
+                <a href="https://github.com/BobbyH03/Inventory-Manager" target="_blank">💻 View Code on GitHub</a>
+            </p>
+
+            <h3>Screenshots</h3>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <div class="image-container">
+                        <a href="assets/img/Inventory_Manager.png" data-lightbox="vacation" data-title="Main screen">
+                            <img src="assets/img/Inventory_Manager.png" alt="Main screen">
+                        </a>
+                    </div>
+                    <p class="image-description">Main screen</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-container">
+                        <a href="assets/img/InventoryManager/AddPart.png" data-lightbox="vacation"
+                            data-title="Part Form">
+                            <img src="assets/img/InventoryManager/AddPart.png" alt="Part Form">
+                        </a>
+                    </div>
+                    <p class="image-description">Add Part Form</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-container">
+                        <a href="assets/img/InventoryManager/AddProduct.png" data-lightbox="vacation"
+                            data-title="Product Form">
+                            <img src="assets/img/InventoryManager/AddProduct.png" alt="Product Form">
+                        </a>
+                    </div>
+                    <p class="image-description">Add Product Form</p>
+                </div>
+                <div class="image-item">
+                    <div class="image-container">
+                        <a href="assets/img/InventoryManager/Confirm2.png" data-lightbox="vacation"
+                            data-title="Purchase Success">
+                            <img src="assets/img/InventoryManager/Confirm2.png" alt="Purchase Success">
+                        </a>
+                    </div>
+                    <p class="image-description">Product Purchase Success</p>
+                </div>
+
+            </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': 'Image %1 of %2'
+        });
+    </script>
+</body>
+
+</html>

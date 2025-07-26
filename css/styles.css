@@ -79,48 +79,46 @@
   --bs-highlight-bg: #fff3cd;
 }
 
-/* Scoped Contact Form Styles */
+
 #contact-page {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove any default margin */
-  background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Soft gradient background */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
   font-family: Arial, sans-serif;
 }
 
 #contact-page #contact-form {
-  background-color: #fff; /* Clean white background */
+  background-color: #fff;
   padding: 40px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  width: 100%; /* Make the form responsive */
-  max-width: 600px; /* Set a max-width for the form */
-  margin: 30px auto; /* Center the form horizontally */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
   display: flex;
-  flex-direction: column; /* Arrange elements in a column */
-  justify-content: center; /* Vertically center the form content */
+  flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   #contact-page #contact-form {
-    margin-left: 390px; /* Only apply this margin on larger screens */
+    margin-left: 390px;
   }
 }
 
-/* Title */
 #contact-page #contact-form h2 {
-  font-size: 2rem; /* Larger font size for the form title */
+  font-size: 2rem;
   font-weight: 600;
-  color: #333; /* Dark color for the title */
+  color: #333;
   text-align: center;
-  margin-bottom: 20px; /* Spacing below the title */
-  color: #bd5d38; /* Use portfolio color for the title */
+  margin-bottom: 20px;
+  color: #bd5d38;
 }
 
-/* Form styling */
 #contact-page #contact-form label {
-  font-size: 1rem; /* Standard label size */
+  font-size: 1rem;
   color: #333;
   margin-bottom: 5px;
   display: block;
@@ -128,47 +126,46 @@
 
 #contact-page #contact-form input,
 #contact-page #contact-form textarea {
-  width: 100%; /* Full width for inputs and textarea */
+  width: 100%;
   padding: 12px;
   font-size: 1rem;
   color: #333;
-  background-color: #f9f9f9; /* Light background for input fields */
+  background-color: #f9f9f9;
   border: 1px solid #ccc;
-  border-radius: 5px; /* Slightly rounded edges */
+  border-radius: 5px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
-/* Add #bd5d38 color for borders and focus */
 #contact-page #contact-form input:focus,
 #contact-page #contact-form textarea:focus {
-  border-color: #bd5d38; /* Use portfolio color for focus */
-  background-color: #fff; /* White background on focus */
-  outline: none; /* Remove default outline */
+  border-color: #bd5d38;
+  background-color: #fff;
+  outline: none;
 }
 
-/* Button styling */
+
 #contact-page #contact-form button {
   padding: 12px 20px;
-  background-color: #bd5d38; /* Use portfolio color for the button */
+  background-color: #bd5d38;
   color: white;
   font-size: 1rem;
   border: none;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 #contact-page #contact-form button:hover {
-  background-color: #a45a2d; /* Slightly darker shade on hover */
+  background-color: #a45a2d;
 }
 
 #contact-page #contact-form button:disabled {
-  background-color: #ccc; /* Disabled state color */
+  background-color: #ccc;
   cursor: not-allowed;
 }
 
-/* Success/Failure Messages */
+
 #contact-page #contact-form .message {
   text-align: center;
   margin-top: 20px;
@@ -177,71 +174,69 @@
 }
 
 #contact-page #contact-form .success {
-  color: #4CAF50; /* Green color for success message */
+  color: #4CAF50;
 }
 
 #contact-page #contact-form .error {
-  color: #f44336; /* Red color for error message */
+  color: #f44336;
 }
 
-/* Add some spacing between the form fields */
+
 #contact-page #contact-form .form-field {
   margin-bottom: 15px;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   #contact-page {
-    padding: 20px; /* Add padding for small screens */
+    padding: 20px;
   }
 
   #contact-page #contact-form {
-    padding: 20px; /* Reduce padding on mobile for better fit */
-    max-width: 100%; /* Ensure the form takes up full width on small screens */
+    padding: 20px;
+    max-width: 100%;
   }
 
   #contact-page #contact-form h2 {
-    font-size: 1.5rem; /* Slightly smaller title on mobile */
+    font-size: 1.5rem;
   }
 
   #contact-page #contact-form input,
   #contact-page #contact-form textarea {
-    padding: 10px; /* Reduce padding for mobile */
-    font-size: 0.9rem; /* Slightly smaller font size */
+    padding: 10px;
+    font-size: 0.9rem;
   }
 
   #contact-page #contact-form button {
-    font-size: 0.9rem; /* Smaller button text */
-    padding: 10px 18px; /* Adjust button size for mobile */
+    font-size: 0.9rem;
+    padding: 10px 18px;
   }
 }
 
 
-/* Vacation Planner Page Styles */
 #vacation-planner-page .resume-section {
-  background-color: #fff; /* Clean white background */
+  background-color: #fff;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  margin-top: 30px; /* Space above the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
 #vacation-planner-page h2 {
-  font-size: 2rem; /* Larger font size for the main title */
-  font-weight: 600; /* Bold weight */
-  color: #333; /* Dark color for a modern touch */
-  text-align: center; /* Centered title */
-  margin-bottom: 10px; /* Adjust spacing from the rest of the content */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
 
 #vacation-planner-page h3 {
-  font-size: 1.5rem; /* Slightly smaller subheading */
+  font-size: 1.5rem;
   font-weight: 500;
   color: #333;
   text-align: center;
-  margin-bottom: 10px; /* Reduced margin to bring the header closer to the images */
+  margin-bottom: 10px;
 }
 
 @keyframes fadeIn {
@@ -251,46 +246,45 @@
 }
 
 #vacation-planner-page .resume-section-content {
-  max-width: 1200px; /* Restrict width for better readability */
-  margin: 0 auto; /* Center align the content */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #vacation-planner-page .resume-section h2,
 #vacation-planner-page .resume-section ul {
-  margin-bottom: 20px; /* Add spacing below the heading and the list */
+  margin-bottom: 20px;
 }
 
-/* Image Gallery Styles */
+
 #vacation-planner-page .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-  gap: 20px; /* Space between images */
-  justify-content: center; /* Centered gallery */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
 }
 
 #vacation-planner-page .image-gallery img {
-  width: 100%; /* Full width for images */
-  max-width: 300px; /* Limit image size */
-  height: auto; /* Maintain aspect ratio */
-  border: 3px solid #333; /* Add a border */
-  border-radius: 8px; /* Rounded corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #vacation-planner-page .image-gallery img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow for a 3D effect */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 #vacation-planner-page .image-description {
   margin-top: 8px;
   font-size: 14px;
-  color: #666; /* Lighter gray for description text */
-  text-align: center; /* Center align the text */
-  font-weight: 500; /* Slightly bold text */
+  color: #666;
+  text-align: center;
+  font-weight: 500;
 }
 
-/* Specific styling for individual image items */
 #vacation-planner-page .image-item {
   position: relative;
   width: 100%;
@@ -316,13 +310,11 @@
   object-fit: contain;
 }
 
-/* Title Hover Effects */
 #vacation-planner-page h2:hover {
-  color: #555; /* Slight color change on hover */
-  text-decoration: underline; /* Underline effect */
+  color: #555;
+  text-decoration: underline;
 }
 
-/* Ensure the page content is properly spaced */
 #vacation-planner-page .resume-section-content {
   padding: 20px;
   margin-bottom: 20px;
