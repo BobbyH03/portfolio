@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Vacation Planner Android App - Deployment & Documentation</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
 <body id="vacation-planner-page">
@@ -48,11 +49,13 @@
       <p>
         The Android APK file is available for direct download. To install this APK on an Android device, you may need to
         enable installation from unknown sources in your device settings. Installation instructions are included in the
-        documentation.
+        documentation. Use the predefined credentials to log in: <strong>Username: admin</strong> and
+        <strong>Password: password.</strong>
       </p>
       <p>
         <a href="downloads/app-release.apk" download>Download the Vacation Planner APK</a>
       </p>
+
       <h3>Documentation</h3>
       <p>
         For a complete overview of the project, including setup instructions and user guide
@@ -62,6 +65,86 @@
       <p>
         <a href="downloads/MobileAppDocumentation.pdf" download>Complete Documentation PDF</a>
       </p>
+
+      <h3>Screenshots</h3>
+      <div class="image-gallery">
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/login.png" data-lightbox="vacation" data-title="Login Page">
+              <img src="assets/img/VacationMobile/login.png" alt="Login Page">
+            </a>
+          </div>
+          <p class="image-description">Login Page</p>
+        </div>
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/Home.png" data-lightbox="vacation" data-title="Home screen">
+              <img src="assets/img/VacationMobile/Home.png" alt="Home screen">
+            </a>
+          </div>
+          <p class="image-description">Home Screen</p>
+        </div>
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/VacationList.png" data-lightbox="vacation" data-title="Vacation List">
+              <img src="assets/img/VacationMobile/VacationList.png" alt="Vacation List">
+            </a>
+          </div>
+          <p class="image-description">Vacation List</p>
+        </div>
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/VacationDetails.png" data-lightbox="vacation"
+              data-title="Vacation Details">
+              <img src="assets/img/VacationMobile/VacationDetails.png" alt="Vacation Details">
+            </a>
+          </div>
+          <p class="image-description">Vacation Details</p>
+        </div>
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/ExcursionDetails.png" data-lightbox="vacation"
+              data-title="Excursion Details">
+              <img src="assets/img/VacationMobile/ExcursionDetails.png" alt="Excursion Details">
+            </a>
+          </div>
+          <p class="image-description">Excursion Details</p>
+        </div>
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/Validation.png" data-lightbox="vacation" data-title="App Validation">
+              <img src="assets/img/VacationMobile/Validation.png" alt="App Validation">
+            </a>
+          </div>
+          <p class="image-description">App Validation</p>
+        </div>
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/Report.png" data-lightbox="vacation" data-title="Report Feature">
+              <img src="assets/img/VacationMobile/Report.png" alt="Report Feature">
+            </a>
+          </div>
+          <p class="image-description">Report Feature</p>
+        </div>
+        <div class="image-item">
+          <div class="image-container">
+            <a href="assets/img/VacationMobile/Share.png" data-lightbox="vacation" data-title="Share Feature">
+              <img src="assets/img/VacationMobile/Share.png" alt="Share Feature">
+            </a>
+          </div>
+          <p class="image-description">Share Feature</p>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="js/lightbox.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'albumLabel': 'Image %1 of %2',
+        });
+      </script>
     </div>
   </section>
 </body>
